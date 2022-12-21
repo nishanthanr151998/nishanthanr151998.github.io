@@ -7,9 +7,9 @@ section{
 }
 
 .hero {
-    background-color: #1c1d25;
+    background-color: whitesmoke;
     height: 100vh;
-    color: white;
+    color: darkmagenta;
     font-size: 40px;
 
 }
@@ -29,6 +29,7 @@ nav {
 
 ul {
     display: flex;
+    color: darkmagenta;
     list-style-type: none;
     width: 500px;
     justify-content: space-around;
@@ -55,6 +56,11 @@ p {
     font-weight: 300;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .subtext {
     font-size: 15px;
     font-weight: 300;
@@ -71,6 +77,43 @@ p {
 .hero-text {
     margin-left: 80px;
     margin-bottom: 200px;
+}
+
+.hero-image {
+    position: relative;
+    width: 50%;
+    height: 350px;
+    display: block;
+}
+
+.cube {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: pink;
+    transform: rotate(-25deg) skew(25deg)
+}
+
+.cube::before {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 100%;
+    background-color: blue;
+    transform: skewY(-45deg);
+    left: -20px;
+    bottom: -10px;
+}
+
+.cube::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 21px;
+    background-color: rgb(222, 17, 51);
+    transform: skewX(-45deg);
+    left: -10px;
+    bottom: -20px;
 }
 
 .button {
@@ -95,7 +138,9 @@ p {
 }
 
 .socials {
-    padding-bottom: 200px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .logo {
@@ -105,6 +150,7 @@ p {
 
 .social {
     margin: 20px;
+    display: inline-block;
 }
 
 .sub-section {
@@ -113,7 +159,7 @@ p {
     padding: 80px;
 }
 
-sub-section-alternative {
+.sub-section-alternative {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -158,11 +204,6 @@ hr {
 
 }
 
-a{
-    text-decoration: none;
-    color: white;
-}
-
 .hamburger {
     display: none;
 }
@@ -201,5 +242,147 @@ a{
         align-items: flex-start;
         flex-direction: column-reverse;
         background-color: #2f387b;
+    }
+}
+
+#Python {
+    left: -100px;
+    bottom: 300px;
+    background-image: url("images/Skills/python-square.png");
+    background-size: cover;
+    background-color: #bc609d;
+    box-shadow: -60px 60px -20px #b0abab;
+}
+
+#Python::before {
+    background-color: #741855;
+}
+
+#Python::after {
+    background-color: #c97aaf;
+}
+
+#Cpp {
+    left: 110px;
+    bottom: 210px;
+    background-image: url("images/Skills/cpp-square.png");
+    background-size: cover;
+    background-color: #bc609d;
+    box-shadow: -60px 60px -20px #b0abab;
+}
+
+#Cpp::before {
+    background-color: #741855;
+}
+
+#Cpp::after {
+    background-color: #c97aaf;
+}
+
+#Angular {
+    left: 100px;
+    bottom: 400px;
+    background-image: url("images/Skills/angular-square.png");
+    background-size: cover;
+    background-color: #bc609d;
+    box-shadow: -60px 60px -20px #b0abab;
+}
+
+#Angular::before {
+    background-color: #741855;
+}
+
+#Angular::after {
+    background-color: #c97aaf;
+}
+
+#Flask {
+    left: 140px;
+    bottom: -20px;
+    background-image: url("images/Skills/flask-square.png");
+    background-size: cover;
+    background-color: #bc609d;
+    box-shadow: -60px 60px -20px #b0abab;
+}
+
+#Flask::before {
+    background-color: #741855;
+}
+
+#Flask::after {
+    background-color: #c97aaf;
+}
+
+#Azure {
+    left: 220px;
+    bottom: 100px;
+    background-image: url("images/Skills/azure-square.png");
+    background-size: cover;
+    background-color: #bc609d;
+    box-shadow: -60px 60px -20px #b0abab;
+}
+
+#Azure::before {
+    background-color: #741855;
+}
+
+#Azure::after {
+    background-color: #c97aaf;
+}
+
+#AWS {
+    left: 0px;
+    bottom: 100px;
+    background-image: url("images/Skills/aws-square.png");
+    background-size: cover;
+    background-color: #bc609d;
+    box-shadow: -60px 60px -20px #b0abab;
+}
+
+#AWS::before {
+    background-color: #741855;
+}
+
+#AWS::after {
+    background-color: #c97aaf;
+}
+
+#SQL {
+    left: 300px;
+    bottom: 220px;
+    background-image: url("images/Skills/sql-square.png");
+    background-size: cover;
+    background-color: #bc609d;
+    box-shadow: -60px 60px -20px #b0abab;
+}
+
+#SQL::before {
+    background-color: #741855;
+}
+
+#SQL::after {
+    background-color: #c97aaf;
+}
+
+#MongoDB {
+    left: -100px;
+    bottom: -50px;
+    background-image: url("images/Skills/mongodb-square.png");
+    background-size: cover;
+    background-color: #bc609d;
+    box-shadow: -60px 60px -20px #b0abab;
+}
+
+#MongoDB::before {
+    background-color: #741855;
+}
+
+#MongoDB::after {
+    background-color: #c97aaf;
+}
+
+@media only screen and (max-width: 1300px) {
+    .hero-image {
+        display: none;
     }
 }
