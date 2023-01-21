@@ -189,7 +189,8 @@ a {
 
 .project-image {
     margin-top: 25 px;
-    width: 250 px;
+    height: 160px;
+    width: 160 px;
     border-radius: 125px;
 }
 
